@@ -1,0 +1,6 @@
+Model/Configuration,Best Hyperparameters,CV RMSE (Mean),Test RMSE,Notes
+Linear Regression,N/A,69292.9099091965,67346.87995764882,Baseline model
+Decision Tree Regressor,N/A,69846.1129905358,69203.52536476958,"Single tree, prone to overfitting"
+Random Forest Regressor,N/A,50498.68096613544,47197.66824186381,"Ensemble of decision trees, generally robust"
+SVR (GridSearchCV),"{'svr__C': 1.0, 'svr__kernel': 'linear'}",115247.63647808088,110171.50233218177,Exhaustive search for SVR hyperparameters
+SVR (RandomizedSearchCV),"{'svr__C': 1.3292918943162162, 'svr__gamma': 0.3010121430917521, 'svr__kernel': 'linear'}",114107.74877345825,108011.96517413885,"Random sampling for SVR hyperparameters, more efficient"
